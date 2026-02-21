@@ -1,0 +1,22 @@
+$color-principal: #28a745;
+$color-oscuro: #111;
+$espaciado: 20px;
+
+.home-cont-dest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $espaciado;
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border: 2px solid transparent;
+        transition: 0.3s;
+
+        &:hover {
+            border-color: $color-principal;
+            transform: scale(1.02);
+        }
+    }
+}
