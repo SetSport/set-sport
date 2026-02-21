@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/* Resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+
+/* Selector de etiqueta */
+header{
+    /* Aca dentro van los codigos de estilos*/ 
+    background-color: skyblue;
+    padding: 20px;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  margin-top: auto;
+  width: 100%;
+}
+
+
+h1{
+   font-size: 50px;
+  text-align: center;
+  color: rgb(181, 243, 56) 
+}
+
+h2{
+ text-align: center;   
+}
+
+p{
+ text-align: center;
+}
+
+/* Selector de clase*/
+
+.main {
+  padding: 30px;
+}
+
+.footer contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.redes a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.redes a:hover {
+transform: scale(1.2);
+color: #28a745;
+}
+
+.slogan{
+  margin: 0 10px;
+}
+
+.grid-productos{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:40px;
+  text-align:center;
+  border-radius:10px;
+}
+
+.preguntas{
+  max-width:700px;
+  margin:auto;
+}
+
+
+.pregunta{
+  background:white;
+  padding:20px;
+  text-align: center;
+  margin-bottom:15px;
+  border-radius:10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.home-cont-dest{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+  
+}
+.home-cont-dest img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+  
+.home-title {
+  font-size: 35px;
+}
+
+.seccion {
+ text-align: center;
+ background-color: #eaf7f8;
+ padding: 40px 0;
+ width: 100vw;
+ position: relative;
+ left: 50%;
+ right: 50%;
+ margin-left: -50vw;
+ margin-right: -50vw;
+}
+
+.seccion-texto {
+margin-bottom: 20px;
+margin-top: 10px;
+line-height: 1.6;
+text-align: center;
+}
+
+.seccion-texto ol {
+ margin-top: 0;
+ padding-top: 5px;
+ display: inline-block;
+ list-style-position: inside;
+ padding-left: 0;
+}
+
+.seccion-imagen{
+ margin-top: 50px;
+ text-align: center;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 20px;
+  flex-direction: row-reverse;
+}
+.logo{
+  width: 120px;
+  height: auto;
+}
+
+.store-card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  }
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.img-tienda{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+
+/*Tablet*/
+@media (min-width:431px) and (max-width:800px){
+  .home-cont-dest, .store-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    justify-items: center
+  }
+}
+
+/*Celular*/
+@media (min-width: 320px) and (max-width: 430px){
+.home-cont-dest, .store-section {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 15px;
+    justify-items: center;
+  }
+  .encabezado {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+.encabezado nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    text-align: center;
+  }
+}
+ html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+  /*Home*/
+
+
+/* Selector de tipo ID*/
+#encabezado-inicio{
+    /* Aca dentro van los codigos de estilos*/
+    background-color: blueviolet;
+}
+
+.home-cont-dest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border: 2px solid transparent;
+        transition: 0.3s;
+
+        &:hover {
+            border-color: #bfff00;;
+            transform: scale(1.02);
+        }
+    }
+}
